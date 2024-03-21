@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio do Decodificador</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__decodificador" href="index.html">Decodificador</a>
+            <a class="cabecalho__menu__sobreoprojeto" href="sobreoprojeto.html">Sobre o projeto</a>
+        </nav>
+    </header>
+
+  <main class="apresentacao">
+    <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__titulo">Bem vindo ao Decodificador de Texto</h1>
+        <div class="ladoalado">
+            <div class="apresentacao__conteudo__caixadetexto1">
+                <textarea id="input" placeholder="Insira aqui o texto que deseja criptografar ou descriptografar" class="textocodificar1"></textarea>
+                <button class="apresentacao__conteudo__caixatexto__botaocriptografar" onclick="criptografar()">Criptografar</button>
+                <button class="apresentacao__conteudo__caixatexto__botaodescriptografar" onclick="descriptografar()">Descriptografar</button>
+              </div>
+            <div class="apresentacao__conteudo__caixadetexto2">
+                <textarea id="output" readonly placeholder="Aqui seu texto criptografado ou descriptografado será exibido" class="textocopiar"></textarea>
+                <button class="apresentacao__conteudo__caixatexto__botaocopiar" onclick="copiar()">Copiar</button>
+        </div>
+        </div>
+    </section>
+  </main>
+  
+  <footer class="rodape">
+    <p>Desenvolvido por Gabriel Rodrigues - Créditos de imagem: Takaia 2018</p>
+  </footer>
+  
+</body>
+</html>
